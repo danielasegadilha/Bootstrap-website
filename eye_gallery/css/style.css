@@ -1,0 +1,421 @@
+/**general styling**/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 280px;
+}
+
+.container-fluid {
+  padding: 0 1.4rem;
+}
+
+.display-4 {
+  font-size: calc(1.475rem + 0.8vw);
+}
+
+.display-6 {
+  font-size: clamp(30px, 10vw, 100px);
+}
+
+#editals .d-flex > p, #exhibitions .d-flex > p {
+  font-size: clamp(20px, 4vw, 30px);
+}
+
+/**btn styling**/
+
+main .btn {
+  width: clamp(130px, 15vw, 200px);
+  height: clamp(50px, 8vw, 60px);
+ }
+
+ footer form > .btn {
+  width: 30%;
+  height: 80px;
+ }
+
+/**nav styling**/
+
+nav img {
+    width: 80px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.fixedHeightImg > img {
+    max-height: 700px;
+    object-fit: cover;
+  }
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav li.active {
+    border-bottom: 2px solid gray;
+  }
+
+/**hero-section**/
+
+#hero-section {
+  padding-top: 50px;
+}
+
+.h1 {
+  font-size: clamp(50px, 10vw, 100px);
+}
+
+
+/**carousel**/
+
+
+.fixed-button {
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  z-index: 99;
+  top: 25%;
+  right: 15%;
+}
+
+.fixed-button h1 {
+    text-shadow: 2px 2px black;
+    font-size: clamp(35px, 8vw, 100px);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 22%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 3em;
+    height: 3em;
+}
+
+@media (max-width: 576px) {
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  .carousel-caption {
+    bottom: clamp(20px, 12vw, 200px);
+  }
+
+}
+
+
+@media (max-width: 992px) {
+  
+  .carousel-item img {
+    aspect-ratio: 1 / 1.2;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .carousel-item img {
+    aspect-ratio: 1 / 0.7;
+  }
+
+}
+
+@media (min-width: 576px) {
+  
+  .carousel-caption {
+    bottom: clamp(2vw, 17vw, 250px);
+  }
+
+  .carousel-caption h1 {
+    margin-bottom: 40px;
+  }
+
+}
+
+/**section styling**/ 
+
+@media (max-width: 576px) {
+
+  section {
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+  section {
+    margin-bottom: 70px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  section {
+    margin-bottom: 80px;
+  }
+  
+}
+
+/**exhibitions styling**/ 
+
+.card {
+  padding: clamp(5px, 2vw, 20px);
+  position: relative;
+}
+
+#exhibitions p, #editals p {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  
+  .exhibitions > img {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .button-all {
+    width: 100%!important;
+    margin-top: 20px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .exhibitions > img {
+    aspect-ratio: 1 / 1.2;
+  }
+
+  .card-title {
+    margin-bottom: 15px;
+  }
+
+  .card-text {
+    margin-bottom: 5px;
+  }
+
+}
+
+
+#exhibitions .card .mask, #exhibitions .card .read-more {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+#exhibitions .card:hover > .mask {
+  opacity: 0.4;
+}
+
+#exhibitions .card:hover > .mask, #exhibitions .card:hover > .read-more {
+  visibility: visible;
+}
+
+/**editals styling**/
+
+
+@media (max-width: 768px) {
+  #editals .edital-card {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 768px) {
+  
+  #editals img {
+    object-fit: cover;
+    max-height: 250px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  #editals img {
+    width: clamp(300px, 20vw, 400px);
+    aspect-ratio: 1 / 0.9;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  #editals .d-flex > img {
+    border-left: 1px solid rgba(0, 0, 0, 0.175);
+    border-top: 1px solid rgba(0, 0, 0, 0.175);
+    border-right: 1px solid rgba(0, 0, 0, 0.175);
+  }
+  
+  .rounded-start {
+    border-bottom-left-radius: 0%!important;
+    border-top-right-radius: 0.375rem;
+  }
+
+  #editals .row:hover .d-flex > img {
+    border-top-color:#666666;
+    border-left-color:#666666;
+    border-right-color:#666666;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  #editals .d-flex > img {
+    border-left: 1px solid rgba(0, 0, 0, 0.175);
+    border-top: 1px solid rgba(0, 0, 0, 0.175);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+  }
+  
+  #editals .row:hover .d-flex > img {
+    border-top-color:#666666;
+    border-bottom-color:#666666;
+    border-left-color:#666666;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  #editals .card {
+    border-top-left-radius: 0%;
+    border-bottom-color: 0;
+  }
+  
+  .rounded-end {
+    border-top-right-radius: 0%!important;
+  }
+
+  #editals .row:hover .d-flex > .card {
+    border-bottom-color:#666666;
+    border-left-color:#666666;
+    border-right-color:#666666;
+  }
+}
+
+@media (min-width: 768px) {
+  #editals .card {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-left-color: 0;
+  }
+  
+  #editals .row:hover .d-flex > .card {
+    border-top-color:#666666;
+    border-bottom-color:#666666;
+    border-right-color:#666666;
+  }
+}
+
+#editals .card p {
+  text-align: justify
+}
+
+#editals .card-body {
+  padding-bottom: 0;
+}
+
+
+/**footer**/
+
+#footer .mg-bottom {
+  margin-bottom: clamp(30px, 5vw, 80px);
+}
+
+
+@media (min-width: 1200px) {
+
+  #footer form {
+    margin-top: 1.83em;
+  }
+}
+
+#footer form > input {
+  border-bottom-left-radius: 0.375rem;
+  border-top-left-radius: 0.375rem;
+  border-color: gray;
+  width: 70%;
+  height: 80px;
+  cursor: pointer;
+}
+
+
+#footer form > button {
+  border-bottom-left-radius: 0%;
+  border-top-left-radius: 0%;
+}
+
+#footer .bi {
+  font-size: clamp(20px, 7vw ,40px);
+}
+
+@media (max-width: 768px) {
+
+  #footer .mg-bottom-sm {
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  #footer .mg-bottom-xl {
+    margin-bottom: 130px;
+  }
+  
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+
+  #footer .social-midia {
+    justify-content: space-evenly;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  #footer .social-midia {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) or (min-width: 1200px) {
+
+  #footer .social-midia {
+    flex-direction: column;
+  }
+}
+
+#footer .social-midia .hover:hover {
+  color: #666666!important;
+  transition: color 0.2s linear;
+}
+
+
+/**scrollbar styling**/
+
+::-webkit-scrollbar {
+  background-color: var(--background-color);
+  width: clamp(5px, 3px + 0.5vw, 8px);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #bcb9b9;
+  border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666666; 
+}
