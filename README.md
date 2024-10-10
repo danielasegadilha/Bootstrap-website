@@ -1,6 +1,6 @@
 # Eye-gallery
 
-**Eye-gallery** is a fictional art gallery page created using HTML, CSS, and Bootstrap. This project is an example of a responsive web design, ensuring that the gallery looks great on devices of all sizes.
+**Eye-gallery** is a fictional art gallery page created using HTML, CSS, and Bootstrap. This project is an example of a responsive web design, ensuring that the gallery looks great on devices of all sizes. Its also possible to check it out at [codepen](https://codepen.io/danielasegadilha/pen/RweKaOq)
 <img src="/assets/eye-gallery.gif"><!-- Altere para o URL do seu logotipo, se necessário -->
 
 ## 🚀 Features
